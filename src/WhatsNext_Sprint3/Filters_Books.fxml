@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.Filters_BooksController">
+    <stylesheets>
+        <URL value="@WhatsNextStyleSheet.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="288.0" layoutY="161.0" text="Genres" />
+      <Label layoutX="269.0" layoutY="360.0" text="Incognito Search" />
+      <Label layoutX="253.0" layoutY="263.0" text="Positive/Negative" />
+      <CheckBox fx:id="comedy" layoutX="185.0" layoutY="175.0" mnemonicParsing="false" text="Comedy" textFill="WHITE" />
+      <CheckBox fx:id="drama" layoutX="185.0" layoutY="195.0" mnemonicParsing="false" text="Drama" textFill="WHITE" />
+      <CheckBox fx:id="horror" layoutX="364.0" layoutY="175.0" mnemonicParsing="false" text="Horror" textFill="WHITE" />
+      <CheckBox fx:id="fantasy" layoutX="364.0" layoutY="195.0" mnemonicParsing="false" text="Fantasy" textFill="WHITE" />
+      <Button fx:id="SearchButton" layoutX="286.0" layoutY="433.0" mnemonicParsing="false" onAction="#handleSearchAction" text="Search" />
+      <Label layoutX="207.0" layoutY="293.0" text="LIKE" />
+      <Label layoutX="178.0" layoutY="318.0" text="NOT LIKE" />
+      <TextField fx:id="positiveFilters" layoutX="244.0" layoutY="289.0" />
+      <TextField fx:id="negativeFilters" layoutX="244.0" layoutY="323.0" />
+      <CheckBox fx:id="incognito" layoutX="163.0" layoutY="386.0" mnemonicParsing="false" text="When checked, the search will be incognito" textFill="WHITE" />
+      <Button fx:id="LikeOKButton" layoutX="405.0" layoutY="290.0" mnemonicParsing="false" text="OK" />
+      <Button fx:id="NotLikeOKButton" layoutX="405.0" layoutY="324.0" mnemonicParsing="false" text="OK" />
+      <Text fill="WHITE" layoutX="268.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filters">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="251.0" layoutY="467.0" mnemonicParsing="false" text="Return to Main Menu" />
+      <CheckBox fx:id="mystery" layoutX="185.0" layoutY="215.0" mnemonicParsing="false" text="Mystery" textFill="WHITE" />
+      <CheckBox fx:id="thriller" layoutX="364.0" layoutY="215.0" mnemonicParsing="false" text="Thriller" textFill="WHITE" />
+   </children>
+</AnchorPane>

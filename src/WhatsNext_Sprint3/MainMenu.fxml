@@ -22,7 +22,5 @@
       <Button fx:id="LogOutButton" layoutX="226.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefHeight="30.0" prefWidth="170.0" text="Log Out" />
       <Button fx:id="NewProfileButton" layoutX="130.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleProfileButtonAction" prefHeight="30.0" prefWidth="170.0" text="Create New Profile" />
       <Button fx:id="HistoryRecommendButton" layoutX="130.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleHistoryRecommendationAction" prefHeight="30.0" prefWidth="170.0" text="History Based Recommendation" />
-      <Button fx:id="MoodProfile" layoutX="130.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleMoodProfileAction" prefHeight="30.0" prefWidth="170.0" text="Mood Profile" />
-      <Button fx:id="CreateMoodProfile" layoutX="320.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleCreateMoodProfileAction" prefHeight="30.0" prefWidth="170.0" text="Create Mood Profile" />
    </children>
 </AnchorPane>

@@ -24,7 +24,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 
-public class FiltersController {
+public class Filters_MoviesController {
     
     @FXML private CheckBox comedy;
     @FXML private CheckBox drama;
