@@ -31,7 +31,7 @@ public class Search_BooksController {
         
         try{
             Stage stage1 = (Stage)pane.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Filters.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Filters_Books.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             //stage1.setWidth(600);
             Scene scene = new Scene(root, 600, 600);

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package WhatsNext_Sprint3;
 
 import java.util.ArrayList;
@@ -32,7 +27,7 @@ public class Search_MovieController {
         
         try{
             Stage stage1 = (Stage)pane.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Filters.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Filters_Movies.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             //stage1.setWidth(600);
             Scene scene = new Scene(root, 600, 600);
