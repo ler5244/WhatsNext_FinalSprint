@@ -30,7 +30,7 @@
     <Label layoutX="194.0" layoutY="307.0" text="Password:" />
     <PasswordField fx:id="password" layoutX="274.0" layoutY="307.0" />
     <HBox layoutX="114.0" layoutY="158.0" />
-    <Text fx:id="actiontarget" layoutX="253.0" layoutY="425.0" wrappingWidth="43.0" />
+    <Text fx:id="actiontarget" layoutX="194.0" layoutY="412.0" wrappingWidth="234.0" />
     <Button fx:id="SignInButton" layoutX="274.0" layoutY="347.0" onAction="#handleSubmitButtonAction" text="Sign In" />
    
 </AnchorPane>

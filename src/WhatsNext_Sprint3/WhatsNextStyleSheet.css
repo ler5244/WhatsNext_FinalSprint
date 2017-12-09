@@ -21,8 +21,7 @@ root {
 #actiontarget {
   -fx-font-size: 16px;
   -fx-fill: #2e2ed1;
-  -fx-font-weight: bold;
-  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+  -fx-font-weight: bold;  
 }
 
 .button {
