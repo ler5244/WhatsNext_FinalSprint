@@ -81,7 +81,7 @@ public class Search_BooksController {
             Scene scene = new Scene(root, 600, 600);
             stage1.setScene(scene);
             stage1.show();
-            SearchResultController theSearchResultsController = SearchResultController.getSearchResultController();
+            SearchResultUIController theSearchResultsController = SearchResultUIController.getSearchResultUIController();
             //theSearchResultsController.setBookList(results);
         }catch(Exception e){
 

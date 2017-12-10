@@ -80,7 +80,7 @@ public class Search_MovieController {
             Scene scene = new Scene(root, 600, 600);
             stage1.setScene(scene);
             stage1.show();
-            SearchResultController theSearchResultsController = SearchResultController.getSearchResultController();
+            SearchResultUIController theSearchResultsController = SearchResultUIController.getSearchResultUIController();
             theSearchResultsController.setMovieList(results);
         }catch(Exception e){
 
