@@ -101,36 +101,5 @@ public class MainMenuController {
         }
     }
     
-    @FXML protected void handleMoodProfileAction(ActionEvent event) {
-        
-        try{
-            Stage stage1 = (Stage)pane.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MoodProfile.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            //stage1.setWidth(400);
-            Scene scene = new Scene(root, 600, 600);
-            stage1.setScene(scene);
-
-            stage1.show();
-        }catch(Exception e){
-
-        }
-    }
-        
-    @FXML protected void handleCreateMoodProfileAction(ActionEvent event) {
-        
-        try{
-            Stage stage1 = (Stage)pane.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CreateMoodProfile.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            //stage1.setWidth(400);
-            Scene scene = new Scene(root, 600, 600);
-            stage1.setScene(scene);
-
-            stage1.show();
-        }catch(Exception e){
-
-        }
-    }
     
 }
