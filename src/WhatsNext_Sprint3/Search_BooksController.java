@@ -60,7 +60,6 @@ public class Search_BooksController {
     }
     
     @FXML protected void handlSearchMenuButtonAction(ActionEvent event) {
-        
         String text = searchTerms.getText();
         
         text = text.toLowerCase();
@@ -82,9 +81,9 @@ public class Search_BooksController {
             stage1.setScene(scene);
             stage1.show();
             SearchResultUIController theSearchResultsController = SearchResultUIController.getSearchResultUIController();
-            //theSearchResultsController.setBookList(results);
+            theSearchResultsController.setBookList(results);
         }catch(Exception e){
-
+            System.out.println("error");
         }
     }
 }

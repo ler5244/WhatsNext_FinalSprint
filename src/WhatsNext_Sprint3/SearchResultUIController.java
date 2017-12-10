@@ -100,8 +100,23 @@ public class SearchResultUIController {
      */
     public void setMovieList(ArrayList<Movie> movieList) {
         this.movieList = movieList;
+        this.bookList = null;
         initialize();
         list.refresh();
     }
     
+    
+    public ArrayList<Book> getBookList() {
+        return bookList;
+    }
+
+    /**
+     * @param bookList the bookList to set
+     */
+    public void setBookList(ArrayList<Book> bookList) {
+        this.bookList = bookList;
+        this.movieList = null;
+        initialize();
+        list.refresh();
+    }
 }
