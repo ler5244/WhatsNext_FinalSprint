@@ -1,14 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package WhatsNext_Sprint3;
-
-/**
- *
- * @author mattb
- */
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -41,8 +31,7 @@ public class Filters_BooksController {
     @FXML private TextField negativeFilters;
     
     @FXML private AnchorPane pane;
-    private ArrayList<Movie> results;
-    
+    private ArrayList<Book> results;
     
     
     @FXML protected void handleSearchAction(ActionEvent event) {
@@ -87,7 +76,7 @@ public class Filters_BooksController {
             
             Query query = new Query(searchGenres, terms, negTerms); // Creates a query of only positive terms.
             TheSearchEngine search = new TheSearchEngine();
-            results = search.movieSearch(query);       
+            results = search.bookSearch(query);       
             System.out.println(results);
             
             
