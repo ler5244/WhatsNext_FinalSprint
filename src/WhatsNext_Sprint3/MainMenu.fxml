@@ -15,12 +15,12 @@
           <font>
             <Font size="30.0" />
           </font></Text>
-      <Button fx:id="BookSearchButton" layoutX="130.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleSearchBookButtonAction" prefHeight="30.0" prefWidth="170.0" text="Search for a Book" />
-      <Button fx:id="MovieSearchButton" layoutX="320.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleSearchMovieButtonAction" prefHeight="30.0" prefWidth="170.0" text="Search for a Movie" />
-      <Button fx:id="SettingsButton" disable="true" layoutX="320.0" layoutY="260.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" text="Settings" />
-      <Button fx:id="HelpButton" disable="true" layoutX="320.0" layoutY="305.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" text="Help" />
-      <Button fx:id="LogOutButton" layoutX="226.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefHeight="30.0" prefWidth="170.0" text="Log Out" />
-      <Button fx:id="NewProfileButton" layoutX="130.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleProfileButtonAction" prefHeight="30.0" prefWidth="170.0" text="Create New Profile" />
-      <Button fx:id="HistoryRecommendButton" layoutX="130.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleHistoryRecommendationAction" prefHeight="30.0" prefWidth="170.0" text="History Based Recommendation" />
+      <Button fx:id="BookSearchButton" layoutX="100.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleSearchBookButtonAction" prefHeight="30.0" prefWidth="200.0" text="Search for a Book" />
+      <Button fx:id="MovieSearchButton" layoutX="325.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleSearchMovieButtonAction" prefHeight="30.0" prefWidth="200.0" text="Search for a Movie" />
+      <Button fx:id="SettingsButton" disable="true" layoutX="325.0" layoutY="260.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Settings" />
+      <Button fx:id="HelpButton" disable="true" layoutX="325.0" layoutY="305.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Help" />
+      <Button fx:id="LogOutButton" layoutX="226.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefHeight="30.0" prefWidth="170.0" text="Log Out" />
+      <Button fx:id="NewProfileButton" layoutX="100.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleProfileButtonAction" prefHeight="30.0" prefWidth="200.0" text="Create New Profile" />
+      <Button fx:id="HistoryRecommendButton" layoutX="100.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleHistoryRecommendationAction" prefHeight="30.0" prefWidth="200.0" text="History Based Recommendation" />
    </children>
 </AnchorPane>
