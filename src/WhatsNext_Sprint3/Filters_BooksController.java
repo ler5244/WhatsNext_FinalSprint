@@ -33,6 +33,23 @@ public class Filters_BooksController {
     @FXML private AnchorPane pane;
     private ArrayList<Book> results;
     
+     @FXML protected void handleReturnMainMenuButtonAction(ActionEvent event) {
+        
+        
+        try{
+            Stage stage1 = (Stage)pane.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            //stage1.setWidth(600);
+            Scene scene = new Scene(root, 600, 600);
+            stage1.setScene(scene);
+
+            stage1.show();
+        }catch(Exception e){
+
+        }
+    }
+     
     
     @FXML protected void handleSearchAction(ActionEvent event) {
         try{
@@ -81,13 +98,14 @@ public class Filters_BooksController {
             
             
             Stage stage1 = (Stage)pane.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SearchResults.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SearchResult.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             //stage1.setWidth(600);
             Scene scene = new Scene(root, 600, 600);
             stage1.setScene(scene);
             stage1.show();
-            
+            SearchResultUIController theSearchResultsController = SearchResultUIController.getSearchResultUIController();
+            theSearchResultsController.setBookList(results);
         }catch(Exception e){
 
         }
