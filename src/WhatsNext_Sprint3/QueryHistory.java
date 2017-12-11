@@ -22,6 +22,7 @@ public class QueryHistory implements Serializable {
     public void addToHistory (Query q)
     {
         queryHistory.add(q);
+        PersistentDataCntl.getPersistentDataCntl().writeSerializedDataModel();
     }
     
     public ArrayList<Query> getHistory(){
