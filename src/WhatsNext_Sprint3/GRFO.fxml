@@ -16,7 +16,7 @@
             <Font size="30.0" />
          </font>
       </Text>
-      <Button fx:id="MMButton" layoutX="225.0" layoutY="408.0" mnemonicParsing="false" onAction="#handleMainMenuButtonAction" prefWidth="150.0" text="Return to Main Menu" />
+      <Button fx:id="MMButton" layoutX="225.0" layoutY="408.0" mnemonicParsing="false" prefWidth="150.0" text="Return to Main Menu" onAction="#handleMainMenuButtonAction"/>
       <Text fill="WHITE" layoutX="176.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on a name to view their recommendation" />
       <Button fx:id="DanRecommend" layoutX="176.0" layoutY="215.0" mnemonicParsing="false" text="Dan" onAction="#handleDanButtonAction"/>
       <Button fx:id="MattRecommend" layoutX="277.0" layoutY="215.0" mnemonicParsing="false" text="Matt" onAction="#handleMattButtonAction"/>

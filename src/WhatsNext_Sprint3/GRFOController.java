@@ -18,7 +18,6 @@ public class GRFOController{
             Stage stage1 = (Stage)pane.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
             Parent root = (Parent) fxmlLoader.load();
-            //stage1.setWidth(400);
             Scene scene = new Scene(root, 600, 600);
             stage1.setScene(scene);
 
