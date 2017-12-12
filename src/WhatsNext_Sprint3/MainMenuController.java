@@ -85,8 +85,8 @@ public class MainMenuController {
 
         }
     }
-    @FXML protected void handleHistoryRecommendationAction(ActionEvent event) {
-        
+    
+    @FXML protected void handleSearchHistoryButtonAction (ActionEvent event) {
         try{
             Stage stage1 = (Stage)pane.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SearchHistory.fxml"));
@@ -96,7 +96,36 @@ public class MainMenuController {
             stage1.setScene(scene);
 
             stage1.show();
-            
+        }catch(Exception e){
+
+        }
+    }
+    
+    @FXML protected void handleMergedProfileSearchButtonAction (ActionEvent event) {
+        try{
+            Stage stage1 = (Stage)pane.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MergedProfileSearch.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            //stage1.setWidth(400);
+            Scene scene = new Scene(root, 600, 600);
+            stage1.setScene(scene);
+
+            stage1.show();
+        }catch(Exception e){
+
+        }
+    }
+    
+    @FXML protected void handleOthersRecommendationButtonAction (ActionEvent event) {
+        try{
+            Stage stage1 = (Stage)pane.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("GRFO.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            //stage1.setWidth(400);
+            Scene scene = new Scene(root, 600, 600);
+            stage1.setScene(scene);
+
+            stage1.show();
         }catch(Exception e){
 
         }

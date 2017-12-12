@@ -19,7 +19,7 @@ import javafx.stage.Stage;
  *
  * @author Laura
  */
-public class CreateUserController {
+public class CreateProfileController {
     @FXML private TextField username;
     @FXML private PasswordField cpassword;
     @FXML private PasswordField password;

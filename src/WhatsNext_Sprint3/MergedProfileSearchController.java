@@ -10,9 +10,8 @@ import javafx.stage.Stage;
 
 public class MergedProfileSearchController{   
     @FXML private AnchorPane pane;
-    @FXML protected void handleReturnToMainMenuButtonAction(ActionEvent event) {
-        
-        
+    
+    @FXML protected void handleReturnMainMenuButtonAction(ActionEvent event) {
         try{
             Stage stage1 = (Stage)pane.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
