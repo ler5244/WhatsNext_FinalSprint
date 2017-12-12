@@ -16,6 +16,6 @@
             <Font size="30.0" />
          </font>
       </Text>
-      <Button fx:id="MMButton" layoutX="225.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleReturnMainMenuButtonAction" prefWidth="150.0" text="Return to Main Menu" />
+      <Button fx:id="MMButton" layoutX="225.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleMainMenuButtonAction"  prefWidth="150.0" text="Return to Main Menu" />
    </children>
 </AnchorPane>

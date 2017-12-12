@@ -21,7 +21,7 @@
       <CheckBox fx:id="drama" layoutX="185.0" layoutY="195.0" mnemonicParsing="false" text="Drama" textFill="WHITE" />
       <CheckBox fx:id="horror" layoutX="364.0" layoutY="175.0" mnemonicParsing="false" text="Horror" textFill="WHITE" />
       <CheckBox fx:id="fantasy" layoutX="364.0" layoutY="195.0" mnemonicParsing="false" text="Fantasy" textFill="WHITE" />
-      <Button fx:id="SearchButton" layoutX="286.0" layoutY="433.0" mnemonicParsing="false" onAction="#handleSearchAction" text="Search" />
+      <Button fx:id="SearchButton" layoutX="225.0" layoutY="433.0" mnemonicParsing="false" onAction="#handleSearchAction" prefWidth="150.0" text="Search" />
       <Label layoutX="207.0" layoutY="293.0" text="LIKE" />
       <Label layoutX="178.0" layoutY="318.0" text="NOT LIKE" />
       <TextField fx:id="positiveFilters" layoutX="244.0" layoutY="289.0" />
@@ -34,7 +34,7 @@
             <Font size="30.0" />
          </font>
       </Text>
-      <Button layoutX="251.0" layoutY="467.0" mnemonicParsing="false" onAction="#handleReturnMainMenuButtonAction" text="Return to Main Menu" />
+      <Button layoutX="225.0" layoutY="467.0" mnemonicParsing="false" onAction="#handleReturnMainMenuButtonAction" prefWidth="150.0" text="Return to Main Menu" />
       <CheckBox fx:id="mystery" layoutX="185.0" layoutY="215.0" mnemonicParsing="false" text="Mystery" textFill="WHITE" />
       <CheckBox fx:id="thriller" layoutX="364.0" layoutY="215.0" mnemonicParsing="false" text="Thriller" textFill="WHITE" />
    </children>
