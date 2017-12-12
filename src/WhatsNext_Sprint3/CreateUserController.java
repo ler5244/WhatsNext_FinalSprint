@@ -34,7 +34,7 @@ public class CreateUserController {
         if(thePassword.equals(theCPassword))
         {
             User user = new User(username.getText(), cpassword.getText());
-            userList.addUsers(user);
+            PersistentDataCntl.getPersistentDataCntl().readSerializedDataModel();
             try{
                 Stage stage1 = (Stage)pane.getScene().getWindow();
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));

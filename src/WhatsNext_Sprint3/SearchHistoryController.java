@@ -7,6 +7,9 @@ package WhatsNext_Sprint3;
  */
 
 import java.util.ArrayList;
+import javafx.beans.property.ListProperty;
+import javafx.beans.property.SimpleListProperty;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -23,7 +26,7 @@ import javafx.stage.Stage;
  */
 public class SearchHistoryController{
 
-    @FXML private AnchorPane pane;
+        @FXML private AnchorPane pane;
     @FXML private ListView recs;
     private ArrayList<Movie> results;
     private ArrayList<Query> history;
@@ -31,9 +34,14 @@ public class SearchHistoryController{
     private ArrayList<String> masterGenres; 
     private ArrayList<String> masterPositiveFilters; 
     private ArrayList<String> masterNegativeFilters; 
+    private ArrayList<String> titles; 
+    private ListProperty<String> listProperty = new SimpleListProperty<>();
+    
     
     public SearchHistoryController()
-    {
+    {   
+        
+        recs.itemsProperty().bind(listProperty);
         history = LoginController.getLoginController().getTheLoggedInUser().getMovieSearchHistory().queryHistory;
         System.out.println(history);
         if(!history.isEmpty())
@@ -81,9 +89,15 @@ public class SearchHistoryController{
         
         Query historyBasedQuery = new Query(masterGenres, masterPositiveFilters, masterNegativeFilters);
         TheSearchEngine search = new TheSearchEngine();
+        
         results = search.movieSearch(historyBasedQuery);
         System.out.println(results);
-        // Show history based recommendations in recs
+        for(Movie m:results)
+        {
+            titles.add(m.getMovieTitle());
+        }
+        listProperty.set(FXCollections.observableArrayList(titles));
+        recs.itemsProperty().bind(listProperty);
     }
     
     @FXML protected void handleReturnMainMenuButtonAction(ActionEvent event) {

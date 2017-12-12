@@ -1,5 +1,7 @@
 package WhatsNext_Sprint3;
 
+import java.io.Serializable;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,7 +13,7 @@ package WhatsNext_Sprint3;
  *
  * @author Laura
  */
-public class User {
+public class User implements Serializable{
     
     private String username;
     private String password;

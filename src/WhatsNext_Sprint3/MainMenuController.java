@@ -96,6 +96,7 @@ public class MainMenuController {
             stage1.setScene(scene);
 
             stage1.show();
+            
         }catch(Exception e){
 
         }

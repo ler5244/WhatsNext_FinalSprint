@@ -35,6 +35,7 @@ public class PeristentDataCollection implements Serializable{
     public UserList getuserList(){
         return theUserList;
     }
+    
     public MovieList getMovieList(){
         return theMovieList;
     }

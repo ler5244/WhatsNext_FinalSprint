@@ -20,6 +20,7 @@ public class WhatsNext extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         
+        PersistentDataCntl.getPersistentDataCntl();
         LoginController login = new LoginController();
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         Scene scene = new Scene(root, 600, 600);
