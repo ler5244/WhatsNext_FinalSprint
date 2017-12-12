@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.151" fx:controller="WhatsNext_Sprint3.GRFOController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.GRFOController">
     <stylesheets>
         <URL value="@WhatsNextStyleSheet.css" />
     </stylesheets>
@@ -16,6 +16,12 @@
             <Font size="30.0" />
          </font>
       </Text>
-      <Button fx:id="MMButton" layoutX="225.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleMainMenuButtonAction"  prefWidth="150.0" text="Return to Main Menu" />
+      <Button fx:id="MMButton" layoutX="225.0" layoutY="408.0" mnemonicParsing="false" onAction="#handleMainMenuButtonAction" prefWidth="150.0" text="Return to Main Menu" />
+      <Text fill="WHITE" layoutX="176.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on a name to view their recommendation" />
+      <Button fx:id="DanRecommend" layoutX="176.0" layoutY="215.0" mnemonicParsing="false" text="Dan" onAction="#handleDanButtonAction"/>
+      <Button fx:id="MattRecommend" layoutX="277.0" layoutY="215.0" mnemonicParsing="false" text="Matt" onAction="#handleMattButtonAction"/>
+      <Button fx:id="LauraRecommend" layoutX="375.0" layoutY="215.0" mnemonicParsing="false" text="Laura" onAction="#handleLauraButtonAction"/>
+      <Button fx:id="KrystalRecommend" layoutX="176.0" layoutY="265.0" mnemonicParsing="false" text="Krystal" onAction="#handleKrystalButtonAction"/>
+      <Text fx:id="actiontarget" layoutX="200.0" layoutY="340.0" wrappingWidth="234.0" />
    </children>
 </AnchorPane>
